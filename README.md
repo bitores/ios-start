@@ -3,10 +3,24 @@
 <p text-align="center"><img src="a.png" alt=""></p>
 <p text-align="center"><img src="b.png" alt=""></p>
 
+
+
+> 安装插件
+
+``
+sudo curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh  ---install plugin
+rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin ---uninstall plugin
+rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
+
+```
+
+> id
+
+```
 oc中的id是一种数据类型，可以存放任何数据的对象，万能指针 id==NSObject*
+```
 
-
-
+> block
 
 ```
 block：块语法，本质上是匿名函数。与函数指针很相似：int（*）（int x，int y）
@@ -15,14 +29,7 @@ block定义： int (^myblock)(int) = ^(int num){return num * 7;};
 形式：^返回值类型（参数列表）｛函数体｝，其中返回值类型可以省略
 ```
 
-
-
-sudo curl -fsSL https://raw.githubusercontent.com/supermarin/Alcatraz/deploy/Scripts/install.sh | sh  ---install plugin
-rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin ---uninstall plugin
-rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
-
-
-
+> property
 
 ```
 1、atomic 加上线程安全锁（多线程），nonatomic 不会加线程安全锁（非多线程）
@@ -34,6 +41,7 @@ rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
 5、strong与retain功能相似；weak与assign相似，只是当对象消失后weak会自动把指针变为nil
 注：参数作用是-自动生成私有属性或其它属性的setter和getter方法的声明和实现
 ```
+> 资源列表
 
 + [IOS 精讲-类目、延展、协议、属性、内存管理、Block](https://www.chuanke.com/v4702151-153167-581927.html)
 
