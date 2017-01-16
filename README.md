@@ -14,6 +14,21 @@ rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
 
 ```
 
+> 数组
+
+```
+1、可变数组是不可变数组的子类
+2、数组中元素类型可不一致，类js
+
+```
+
+> 字符串
+
+```
+可变字符串是不可变字符串的子类
+```
+
+
 > 关键字
 
 ```
@@ -21,10 +36,11 @@ rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
 ```
 
 
-> 虚函数
+> 函数
 
 ```
 1、OC 中 所有成员方法都是 虚函数
+2、函数的参数中不可以设置默认值
 ```
 
 > 不能被继承的类 类似 final 类
@@ -64,7 +80,11 @@ NSString 、 NSArray 、NSDictionary 这三个类不能被继承
 4、普通类在 .h 文件中声明的属性或方法为 public 
 ```
 
-> 
+> 特殊数据类型
+
+```
+一些特殊的数据类型 id(任何数据类型)、nil(空的对象)、Nil(空的类)、SEL() ，IMP(函数指针)
+```
 
 > id
 
