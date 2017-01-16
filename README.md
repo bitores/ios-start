@@ -14,10 +14,69 @@ rm -rf ~/Library/Application\ Support/Alcatraz ---remove all cache data
 
 ```
 
+> 关键字
+
+```
+ 关键字：NS 、self 、super 、alloc 、init、 release、 @property 、@property(strong/remain/copy/weak/assign、setter/getter、nonatomic/atomic、readonly/readwrite)
+```
+
+
+> 虚函数
+
+```
+1、OC 中 所有成员方法都是 虚函数
+```
+
+> 不能被继承的类 类似 final 类
+
+```
+NSString 、 NSArray 、NSDictionary 这三个类不能被继承
+```
+
+
+> 协议
+
+```
+1、oc无多继承，但可通过其可实现多继承
+```
+
+
+> 类目（分类、类别）
+
+```
+使用：扩展别人的类（可替代子类）
+
+1、不能用来添加成员变量、只能添加方法
+2、可替代子类
+3、同一类放在多个文件中，便于协作
+4、可以被继承
+```
+
+
+> 类延展属性的访问权限
+
+```
+作用：定义私有属性或方法
+
+1、oc中属性没有 public private protected关键字
+2、其访问权限是根据其写的位置确定
+3、写在类的延展中是 private
+4、普通类在 .h 文件中声明的属性或方法为 public 
+```
+
+> 
+
 > id
 
 ```
 oc中的id是一种数据类型，可以存放任何数据的对象，万能指针 id==NSObject*
+```
+
+> SEL 类型
+
+```
+SEL是一个类型，用SEL声明的一个变量，里面装的是消息
+SEL s = @selector(methodName)
 ```
 
 > block
