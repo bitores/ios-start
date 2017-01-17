@@ -50,6 +50,27 @@ ViewController是SubController的父类.
 成员变量通过 XXX 访问，OC的成员变量默认是protected的
 ```
 
+> 页面跳转
+
+```
+一、普通视图
+1、通过方法 - (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^)(void))completion跳转
+[A presentViewController B animated：YES completion：nil];
+B.presentingViewController = A;
+
+A.presentedViewController = B;
+
+2、通过方法 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender跳转
+
+上述两种方式，都是通过 dismissViewControllerAnimated 来返回前一个界面的。
+
+二、导航器模式
+
+
+
+三、tab
+
+```
 
 > 常见错误
 
@@ -478,3 +499,7 @@ block定义： int (^myblock)(int) = ^(int num){return num * 7;};
 + [Pod使用，Pod安装慢解决、Podfile 被安装后，使用 xcworkspace 打开项目](http://blog.csdn.net/eqera/article/details/39312125)
 
 + [iOS开发中的crash文件及重新符号化的问题](http://www.jianshu.com/p/390bc4998b3e)
+
++ [微信使用的JSPatch - ios热更新](https://github.com/bang590/JSPatch/wiki)
+
++ [支付宝使用的Ali-Wax - ios热更新](https://github.com/alibaba/wax/wiki)
